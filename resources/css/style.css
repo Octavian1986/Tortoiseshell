@@ -10,6 +10,12 @@ html {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 1024px) {
+  .site_container {
+    width: 100%;
+  }
+}
+
 /* header and main banner section */
 
 .header_content {
@@ -47,6 +53,10 @@ nav ul li {
   margin-right: 2rem;
 }
 
+.mobile_nav {
+  display: none;
+}
+
 #header_main_banner {
   display: flex;
   flex-direction: column;
@@ -74,6 +84,44 @@ nav ul li {
   background-color: white;
 }
 
+@media only screen and (max-width: 1024px) {
+  .main_banner {
+    height: 22rem;
+    padding-top: 0;
+  }
+  .main_banner_content {
+    font-size: 1.33rem;
+    left: -2rem;
+    margin-top: 5rem;
+    padding: 0.75rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .logo p {
+    display: none;
+  }
+  .mobile_nav {
+    display: block;
+  }
+  .standard_nav {
+    display: none;
+  }
+  .main_banner {
+    height: 17rem;
+    background-size: cover;
+    background-position: left;
+  }
+  .main_banner_content {
+    font-size: 1rem;
+    left: 0;
+    margin-top: 9rem;
+    padding: 1rem 0;
+    align-self: auto;
+    text-align: center;
+  }
+}
+
 /* services section */
 
 .service_box {
@@ -98,6 +146,31 @@ nav ul li {
 
 #ruler, #truck {
   width: 5rem;
+}
+
+.truck_mobile_text {
+  display: none;
+}
+
+@media only screen and (max-width: 620px) {
+  .service_box {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3.77rem 0;
+  }
+  .service {
+    font-size: 0.77rem;
+  }
+  #ruler, #truck {
+    margin-top: 1.54rem;
+  }
+  .truck_mobile_text {
+    display: block;
+  }
+  .truck_standard_text {
+    display: none;
+  }
 }
 
 /* philosophy and appointments section */
@@ -131,6 +204,33 @@ nav ul li {
   margin-left: 2.5%;
 }
 
+@media only screen and (max-width: 620px) {
+  .philosophy_appointments_box {
+    display: flex;
+    flex-direction: column;
+  }
+  .phil_app {
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .phil_app p {
+    width: 95%;
+    font-size: 0.77rem;
+    padding: 1rem 0 4rem 0;
+  }
+  .phil_app h4 {
+    width: 100%;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+  }
+  #philosophy, #appointments {
+    margin: 0 0;
+  }
+}
+
 /* footer section */
 
 .footer_content {
@@ -152,7 +252,23 @@ nav ul li {
     margin-right: 1rem;
   }
 
-  .logo p {
+  .footer_logo p {
     font-size: 1rem;
   }
+
+  @media only screen and (max-width: 620px) {
+    .footer_content {
+      justify-content: center;
+    }
+    .footer_logo {
+      display: block;
+    }
+    .footer_logo img {
+      margin-right: 0;
+    }
+    .footer_logo p {
+      display: none;
+    }
+  }
+
 }
