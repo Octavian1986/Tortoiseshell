@@ -9,7 +9,7 @@ html {
   margin: 0 auto;
 }
 
-/* header section */
+/* header and main banner section */
 
 .header_content {
   display: flex;
@@ -36,17 +36,20 @@ html {
 }
 
 nav ul {
-  font-size: 1rem;
-  padding: 1rem 0 1rem 0;
   display: flex;
   justify-content: space-between;
+  font-size: 1rem;
+  padding: 1rem 0 1rem 0;
 }
 
 nav ul li {
   margin-right: 2rem;
 }
 
-/* main banner section */
+#header_main_banner {
+  display: flex;
+  flex-direction: column;
+}
 
 .main_banner {
   background-image: url("../images/glasses-bg.png");
@@ -57,3 +60,17 @@ nav ul li {
   width: 100%;
   padding-top: 1rem;
 }
+
+.main_banner_content {
+  align-self: flex-end;
+  position: relative;
+  left: 2rem;
+  margin-top: 10rem;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  padding: 1.5rem 5rem;
+  background-color: white;
+}
+
+/* services section */
